@@ -5,8 +5,30 @@ namespace pointsonplane
 {
     internal class Program
     {
+        static void cat()
+        {
+            Console.WriteLine("         ^        ^ ");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("        / l______/ l)");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("       (  --    --   )");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("     - ( ()       ()  ) --");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("     - ) ==  VV   ==  ( --    ) _");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("        )             ) (   (    )");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("       (  (          ) ( (    )   (");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("      ((    )  (      )   )_____)   )");
+            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("   (__)(_()_)__(_()_) (__)___________)");
+            System.Threading.Thread.Sleep(50);
+        }
         static void Main(string[] args)
         {
+
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("область значений каждой координаты варьируется от -5 до +5");
             while (true)
@@ -72,7 +94,10 @@ namespace pointsonplane
                         Console.Write($"{grid[i][j]}");
                     }
                     Console.Write("\n");
+                    System.Threading.Thread.Sleep(50);
                 }
+                Console.WriteLine();
+                cat();
             }
         }
     }
